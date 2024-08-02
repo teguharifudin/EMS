@@ -1,0 +1,229 @@
+
+<app-navbar></app-navbar>
+
+<!-- Hero Section start here -->
+<section class="bg-gray-700 bg-[url('https://res.cloudinary.com/duay9s10x/image/upload/v1722548234/samples/people/jazz.jpg')] bg-center bg-no-repeat bg-blend-multiply mt-6 h-50vh">
+  <div class="mx-auto max-w-screen-xl px-4 py-24 text-center lg:py-56">
+    <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-white md:text-5xl lg:text-6xl">Experience the Future of Events</h1>
+    <p class="mb-8 text-lg font-normal text-gray-300 sm:px-16 lg:px-48 lg:text-xl">Immerse yourself in an event designed to inspire and ignite your passion. Build meaningful connections that will drive your success.</p>
+    <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-x-4 sm:space-y-0">
+      <a routerLink="/register" class="inline-flex items-center justify-center rounded-lg bg-indigo-700 px-5 py-3 text-center text-base font-medium text-white hover:bg-indigo-800 focus:ring-4 focus:ring-indigo-300 dark:focus:ring-indigo-900">
+        Book Your Spot Now
+        <i class="pi pi-arrow-right ml-2"></i>
+      </a>
+      <a href="#agenda" class="inline-flex items-center justify-center rounded-lg border border-white px-5 py-3 text-center text-base font-medium text-white hover:bg-gray-100 hover:text-gray-900 focus:ring-4 focus:ring-gray-400"> Learn more </a>
+    </div>
+  </div>
+</section>
+
+<!-- Hero Section end here -->
+
+<!-- Stats Section Start Here  -->
+<div class="bg-slate-100 py-1 sm:py-6 lg:py-8">
+  <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+    <div class="grid grid-cols-2 gap-4 md:grid-cols-4 lg:gap-8">
+      <!-- stat - start -->
+      <div class="flex flex-col items-center justify-center rounded-lg bg-gray-200 p-4 lg:p-8">
+        <div class="text-xl font-bold text-indigo-500 sm:text-2xl md:text-3xl">{{ yearsCount }}+</div>
+        <div class="text-sm font-semibold sm:text-base">Years</div>
+      </div>
+      <!-- stat - end -->
+
+      <!-- stat - start -->
+      <div class="flex flex-col items-center justify-center rounded-lg bg-gray-200 p-4 md:p-8">
+        <div class="text-xl font-bold text-indigo-500 sm:text-2xl md:text-3xl">{{ attendedCount }}+</div>
+        <div class="text-sm font-semibold sm:text-base">Events</div>
+      </div>
+
+      <!-- stat - start -->
+      <div class="flex flex-col items-center justify-center rounded-lg bg-gray-200 p-4 md:p-8">
+        <div class="text-xl font-bold text-indigo-500 sm:text-2xl md:text-3xl">{{ attendeesCount }}+</div>
+        <div class="text-sm font-semibold sm:text-base">Attendees</div>
+      </div>
+      <!-- stat - end -->
+
+      <!-- stat - start -->
+      <div class="flex flex-col items-center justify-center rounded-lg bg-gray-200 p-4 md:p-8">
+        <div class="text-xl font-bold text-indigo-500 sm:text-2xl md:text-3xl">
+          {{ usersCount }}
+          +
+        </div>
+        <div class="text-sm font-semibold sm:text-base">Users</div>
+      </div>
+      <!-- stat - end -->
+    </div>
+  </div>
+</div>
+
+<!-- Stats Section Ends Here -->
+
+<!-- Agenda Section Card -->
+<div id="agenda">
+  <div class="mt-16 text-center">
+    <h2 class="text-2xl md:text-4xl font-bold">Popular Events For You</h2>
+    <p class="text-gray-500 text-lg mt-4 mb-8 dark:text-gray-400">Discover The Most Happening Events Around You</p>
+  </div>
+  <!-- Card Component  -->
+  <div class="flex flex-wrap justify-center mx-auto py-8 px-4 md:mb-16">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Card 1 -->
+      <div class="w-full sm:w-56 mb-4 bg-white rounded-lg shadow-lg flex flex-col">
+        <img class="rounded-t-lg w-full h-32 sm:h-40 object-cover" src="assets/event1.jpg" alt="Event 1 Image" />
+        <div class="flex justify-between items-start px-4 pt-0 pb-2">
+          <h2 class="hover:cursor-pointer text-gray-900 font-bold text-lg sm:text-xl tracking-tight flex-grow text-center">Soul Night Carnivore Ground</h2>
+          <div class="flex flex-col items-center bg-indigo-100 text-indigo-800 p-2 font-extrabold flex-shrink-0" style="width: 80px; margin-right: -16px; margin-top: 5px; border-radius: 2px;">
+            <span class="text-lg font-bold">30</span>
+            <span class="text-sm font-bold">Sep</span>
+            <span class="text-sm font-bold">2024</span>
+          </div>
+        </div>
+        <div class="flex-grow"></div> <!-- Spacer to push the button and attendees to the bottom -->
+        <div class="flex justify-between items-center px-4 py-2">
+          <button class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 text-sm">Details</button>
+          <div class="flex items-center ml-4">
+            <i class="pi pi-users text-gray-600 mr-2"></i>
+            <span class="text-gray-900 font-semibold">300</span>
+            <span class="text-gray-500 ml-1 text-sm">attending</span>
+          </div>
+        </div>
+      </div>      
+           
+
+      <!-- Card 2 -->
+      <div class="w-full sm:w-56 mb-4 bg-white rounded-lg shadow-lg flex flex-col">
+        <img class="rounded-t-lg w-full h-32 sm:h-40 object-cover" src="assets/event1.jpg" alt="Event 1 Image" />
+        <div class="flex justify-between items-start px-4 pt-0 pb-2">
+          <h2 class="hover:cursor-pointer text-gray-900 font-bold text-lg sm:text-xl tracking-tight flex-grow text-center">Soul Night Carnivore Ground</h2>
+          <div class="flex flex-col items-center bg-indigo-100 text-indigo-800 p-2 font-extrabold flex-shrink-0" style="width: 80px; margin-right: -16px; margin-top: 5px; border-radius: 2px;">
+            <span class="text-lg font-bold">30</span>
+            <span class="text-sm font-bold">Sep</span>
+            <span class="text-sm font-bold">2024</span>
+          </div>
+        </div>
+        <div class="flex-grow"></div> <!-- Spacer to push the button and attendees to the bottom -->
+        <div class="flex justify-between items-center px-4 py-2">
+          <button class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 text-sm">Details</button>
+          <div class="flex items-center ml-4">
+            <i class="pi pi-users text-gray-600 mr-2"></i>
+            <span class="text-gray-900 font-semibold">300</span>
+            <span class="text-gray-500 ml-1 text-sm">attending</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="w-full sm:w-56 mb-4 bg-white rounded-lg shadow-lg flex flex-col">
+        <img class="rounded-t-lg w-full h-32 sm:h-40 object-cover" src="assets/event1.jpg" alt="Event 1 Image" />
+        <div class="flex justify-between items-start px-4 pt-0 pb-2">
+          <h2 class="hover:cursor-pointer text-gray-900 font-bold text-lg sm:text-xl tracking-tight flex-grow text-center">Soul Night Carnivore Ground</h2>
+          <div class="flex flex-col items-center bg-indigo-100 text-indigo-800 p-2 font-extrabold flex-shrink-0" style="width: 80px; margin-right: -16px; margin-top: 5px; border-radius: 2px;">
+            <span class="text-lg font-bold">30</span>
+            <span class="text-sm font-bold">Sep</span>
+            <span class="text-sm font-bold">2024</span>
+          </div>
+        </div>
+        <div class="flex-grow"></div> <!-- Spacer to push the button and attendees to the bottom -->
+        <div class="flex justify-between items-center px-4 py-2">
+          <button class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 text-sm">Details</button>
+          <div class="flex items-center ml-4">
+            <i class="pi pi-users text-gray-600 mr-2"></i>
+            <span class="text-gray-900 font-semibold">300</span>
+            <span class="text-gray-500 ml-1 text-sm">attending</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="w-full sm:w-56 mb-4 bg-white rounded-lg shadow-lg flex flex-col">
+        <img class="rounded-t-lg w-full h-32 sm:h-40 object-cover" src="assets/event1.jpg" alt="Event 1 Image" />
+        <div class="flex justify-between items-start px-4 pt-0 pb-2">
+          <h2 class="hover:cursor-pointer text-gray-900 font-bold text-lg sm:text-xl tracking-tight flex-grow text-center">Soul Night Carnivore Ground</h2>
+          <div class="flex flex-col items-center bg-indigo-100 text-indigo-800 p-2 font-extrabold flex-shrink-0" style="width: 80px; margin-right: -16px; margin-top: 5px; border-radius: 2px;">
+            <span class="text-lg font-bold">30</span>
+            <span class="text-sm font-bold">Sep</span>
+            <span class="text-sm font-bold">2024</span>
+          </div>
+        </div>
+        <div class="flex-grow"></div> <!-- Spacer to push the button and attendees to the bottom -->
+        <div class="flex justify-between items-center px-4 py-2">
+          <button class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 text-sm">Details</button>
+          <div class="flex items-center ml-4">
+            <i class="pi pi-users text-gray-600 mr-2"></i>
+            <span class="text-gray-900 font-semibold">300</span>
+            <span class="text-gray-500 ml-1 text-sm">attending</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+  <!-- Card Component Ends Here --> 
+
+<!-- Testimonial Start Here-->
+<div id="review" class="bg-white py-8 sm:py-12 lg:py-16">
+  <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+    <h2 class="mb-12 text-center text-3xl font-extrabold text-gray-800 md:mb-16 md:text-4xl">What others say about EMS</h2>
+
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12">
+      <!-- quote - start -->
+      <div class="flex flex-col items-center gap-6 bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+        <div class="text-center text-gray-600">“Using EMS to book and attend events has been a fantastic experience. I could easily find events that matched my interests, and the reminders kept me informed about upcoming sessions. The overall experience exceeded my expectations.”</div>
+
+        <div class="flex flex-col items-center gap-3 sm:flex-row">
+          <div class="h-16 w-16 overflow-hidden rounded-full shadow-lg">
+            <img src="assets/review-1.jpeg" loading="lazy" alt="Photo by Radu Florin" class="h-full w-full object-cover object-center" />
+          </div>
+
+          <div class="text-center sm:text-left">
+            <div class="text-lg font-bold text-indigo-500">Sarah Thompson</div>
+            <p class="text-gray-500">Lead Developer / TechPro Solutions</p>
+          </div>
+        </div>
+      </div>
+      <!-- quote - end -->
+
+      <!-- quote - start -->
+      <div class="flex flex-col items-center gap-6 bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+        <div class="text-center text-gray-600">“EMS has been a game-changer for creating & advertising my events. The platform makes it easy to set up and manage events. Thanks to EMS, my events have seen a significant increase in attendance and positive feedback.”</div>
+
+        <div class="flex flex-col items-center gap-3 sm:flex-row">
+          <div class="h-16 w-16 overflow-hidden rounded-full shadow-lg">
+            <img src="assets/review-2.jpeg" loading="lazy" alt="Photo by christian ferrer" class="h-full w-full object-cover object-center" />
+          </div>
+
+          <div class="text-center sm:text-left">
+            <div class="text-lg font-bold text-indigo-500">Kate Berg</div>
+            <p class="text-gray-500">Chief Technology Officer / InnovateX</p>
+          </div>
+        </div>
+      </div>
+      <!-- quote - end -->
+
+      <!-- quote - start -->
+      <div class="flex flex-col items-center gap-6 bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+        <div class="text-center text-gray-600">“EMS made organizing my event incredibly easy and efficient. The support team was also very responsive and helpful. I was able to reach a wide audience and received positive feedback from attendees. I will definitely use EMS again!”</div>
+
+        <div class="flex flex-col items-center gap-3 sm:flex-row">
+          <div class="h-16 w-16 overflow-hidden rounded-full shadow-lg">
+            <img src="assets/review-3.jpeg" loading="lazy" alt="Photo by Ayo Ogunseinde" class="h-full w-full object-cover object-center" />
+          </div>
+
+          <div class="text-center sm:text-left">
+            <div class="text-lg font-bold text-indigo-500">Greg Jackson</div>
+            <p class="text-gray-500">Frontend Developer / CodeCrafters</p>
+          </div>
+        </div>
+      </div>
+      <!-- quote - end -->
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<app-footer></app-footer>
